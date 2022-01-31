@@ -1,0 +1,26 @@
+{
+  "extends": ["stylelint-prettier/recommended"],
+  "plugins": [
+    "stylelint-prettier",
+    "stylelint-declaration-use-variable"
+  ],
+  "rules": {
+    "max-len": ["warn", { "code": 80 }],
+    "prettier/prettier": [
+      true,
+      {"singleQuote": true}
+    ],
+    "sh-waqar/declaration-use-variable": [[
+      "/color/",
+      "background",
+      "margin",
+      "padding",
+      "/border/",
+      "z-index",
+      "font-size",
+      "font-family",
+      "font-weight",
+      "line-height"
+    ]]
+  }
+}
